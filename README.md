@@ -1,19 +1,21 @@
 # PyBlog
 
-PyBlog é um pequeno blog desenvolvido em Python utilizando o framework Django. Este projeto foi criado com o objetivo de estudar e praticar o desenvolvimento web com Django.
+PyBlog é um pequeno blog desenvolvido em Python utilizando o framework Django. Este projeto foi criado com o objetivo de
+estudar e praticar o desenvolvimento web com Django.
 
 ## Tecnologias Utilizadas
 
 - Python 3.12
 - Django 5.0.7
 - SQLite3 (banco de dados padrão do Django)
-- Python-dotenv 1.0.1
 
 ## Requisitos
 
 - Python 3.12
 - Pip (gerenciador de pacotes do Python)
 - Virtualenv (recomendado)
+- python-dotenv 1.0.1 (para variáveis de ambiente)
+- pytest-django 4.8.0 (para testes da aplicação)
 
 ## Instalação
 
@@ -64,6 +66,19 @@ PyBlog é um pequeno blog desenvolvido em Python utilizando o framework Django. 
 
 - Acesse o blog em `http://127.0.0.1:8000/`.
 - Acesse o painel de administração em `http://127.0.0.1:8000/admin/`.
+
+## Testes
+
+Para rodar os testes, siga os passos abaixo:
+
+1. Instale as dependências para testes:
+    ```bash
+    pip install -r tests/requirements.txt
+    ```
+2. Rode os testes:
+    ```bash
+    pytest
+    ```
 
 ## Contribuição
 
