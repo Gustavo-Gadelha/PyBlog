@@ -7,6 +7,7 @@ PyBlog é um pequeno blog desenvolvido em Python utilizando o framework Django. 
 - Python 3.12
 - Django 5.0.7
 - SQLite3 (banco de dados padrão do Django)
+- Python-dotenv 1.0.1
 
 ## Requisitos
 
@@ -41,15 +42,20 @@ PyBlog é um pequeno blog desenvolvido em Python utilizando o framework Django. 
     ```bash
     pip install -r requirements.txt
     ```
-6. Aplique as migrações do banco de dados:
+6. Crie o arquivo `.env` e adicione as variáveis de ambiente:
+    ```plaintext
+    SECRET_KEY=[your_secret_key]
+    DEBUG=True
+    ```
+7. Aplique as migrações do banco de dados:
     ```bash
     python manage.py migrate
     ```
-7. Crie um superusuário para acessar o admin do Django:
+8. Crie um superusuário para acessar o admin do Django:
     ```bash
     python manage.py createsuperuser
     ```
-8. Inicie o servidor de desenvolvimento:
+9. Inicie o servidor de desenvolvimento:
     ```bash
     python manage.py runserver
     ```
