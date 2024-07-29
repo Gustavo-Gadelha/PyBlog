@@ -14,3 +14,24 @@ html, body {
   font-variation-settings:
     "wdth" 100;
 }
+
+.resize-md h1 {
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.resize-md-date, .resize-md-date {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width : 768px) {
+    .resize-md h1 {
+      font-size: 1.75rem;
+      letter-spacing: 0px;
+    }
+
+    .resize-md-author, .resize-md-date {
+      font-size: 0.8125rem;
+    }
+}
+
