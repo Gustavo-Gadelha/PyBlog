@@ -6,7 +6,7 @@
   font-weight: 900;
 }
 
-.test {
+html, body {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
